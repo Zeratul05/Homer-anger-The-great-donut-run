@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./flockMain.js"></script>
+    <style>
+        img{
+            width:10%;
+            height:30%; 
+            margin:0;
+            padding0;
+            position:absolute;
+        }
+
+        #donutStation{
+            width:20%;
+        }
+    </style>
+</head>
+<body>
+    Doooooonut Velocity: <input type="number" onchange="updateDonut()"  id="velocity-bar" min="0" value="10">
+    <br><br>
+    Homer hunger: <input type="number" onchange="updateHomer()" id="homer-bar" min="0" value="10">
+    <br><br>
+    Distort donut <input type="checkbox" onchange="spawnDonuts()" id="child-spawner" value="0">
+
+    <img src="./pictures/LardLadDonuts.png" alt="" id="donutStation"/>
+    <img src="./pictures/donut.png" alt="He lies one great donut. He was humble, yet eaten." id="donut"/>
+    <img src="./pictures/homer.png" alt="Homer is sleeping. Blame him not me" id="homer"/>
+    
+</body>
+</html>
