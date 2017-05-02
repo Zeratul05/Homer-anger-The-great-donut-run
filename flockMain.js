@@ -133,7 +133,7 @@ function followCursor(){
         donutY+=donutVelocity + donutBonus;
     else
         donutY-=donutVelocity + donutBonus;
-        
+    
     // set css
     obj.left = donutX + 'px';
     obj.top = donutY + 'px';
