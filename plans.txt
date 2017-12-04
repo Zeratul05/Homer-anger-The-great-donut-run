@@ -5,3 +5,15 @@ increase the range of the homer
 
 wolverine can instantly kill you
 hulk can break walls and donut station( where the donut is rehabilatating)
+
+
+
+1)when some key is pressed mark all donuts
+   2) when a donut is marked he can follow the donut  ~done
+    else it will follow its last command    ~done
+
+create homer leveling system
+
+
+kamikaze logic:
+    when he collides with homer the donut explodes, explodes on command, when exploding move everything everywhere

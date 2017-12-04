@@ -4,14 +4,26 @@
     
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="./ObjectLogic/cursorLogic.js"></script>
+    <script src="./GameLogic/CollisionDetector.js"></script>
+    <script src="./ObjectHeader/donutH.js"></script>
+    <script src="./ObjectLogic/donutLogic.js"></script>
+    <script src="./ObjectLogic/homerLogic.js"></script>
     <script src="./flockMain.js"></script>
     <style>
+        body{
+            overflow:scroll;
+        }
         img{
             width:10%;
             height:30%; 
             margin:0;
-            padding0;
+            padding:0;
             position:absolute;
+        }
+
+        #donut-station{
+            border: 4px solid black;
         }
 
         #donutStation{
@@ -26,9 +38,8 @@
     <br><br>
     Distort donut <input type="checkbox" onchange="spawnDonuts()" id="child-spawner" value="0">
 
-    <img src="./pictures/LardLadDonuts.png" alt="" id="donutStation"/>
-    <img src="./pictures/donut.png" alt="He lies one great donut. He was humble, yet eaten." id="donut"/>
+    <img src="./pictures/LardLadDonuts.png" alt="" id="donut-station"/>
+    <img src="./pictures/donut.png" alt="Here lies one great donut. He was humble, yet eaten." id="donut"/>
     <img src="./pictures/homer.png" alt="Homer is sleeping. Blame him not me" id="homer"/>
-    
 </body>
 </html>

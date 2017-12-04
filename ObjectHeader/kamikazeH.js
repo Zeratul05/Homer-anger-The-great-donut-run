@@ -1,0 +1,4 @@
+Kamikaze = function()
+{
+    
+}
