@@ -18,10 +18,11 @@ function donutCollision(){
 function checkOverlap(curDonut, checkedDonut){
     
     // directional bounds
-    var rightBound = donut.clientWidth/2 + curDonut.x;
-    var leftBound = -donut.clientWidth/2 + curDonut.x;
-    var topBound = -donut.clientHeight/4 + curDonut.y;
-    var botBound = donut.clientHeight/4 + curDonut.y;
+    var mamaDonut = document.querySelector('#mama-donut');
+    var rightBound = mamaDonut.clientWidth/2 + curDonut.x;
+    var leftBound = -mamaDonut.clientWidth/2 + curDonut.x;
+    var topBound = -mamaDonut.clientHeight/4 + curDonut.y;
+    var botBound = mamaDonut.clientHeight/4 + curDonut.y;
 
     if(leftBound < checkedDonut.x && rightBound > checkedDonut.x
         && topBound < checkedDonut.y && botBound > checkedDonut.y){
@@ -52,19 +53,19 @@ function checkHomerCollision() {
     for(var i = 0; i < donutChildren.length; i++){
         curDonut = donutChildren[i];
         if(leftBound < curDonut.x && rightBound > curDonut.x &&
-            topBound < curDonut.y && botBound > curDonut.y && curDonut.proffesion == 'kamikaze'){
+            topBound < curDonut.y && botBound > curDonut.y && curDonut.profession == 'kamikaze'){
                 // if the kamikaze is coming from right
                 if(curDonut.x > homerPosition.x)
                     homerPosition.x -= Math.round(Math.random() * (rightBound));
                 else if(curDonut.x < homerPosition.x) // => left
-                    homerPosition += Math.round(Math.random() * (rightBound));
+                    homerPosition.x += Math.round(Math.random() * (rightBound));
                 
                 // now check up and down
                 if(curDonut.y  > homerPosition.y)
                     homerPosition.y -= Math.round(Math.random() * (botBound));
                 else if(curDonut.y < homerPosition.y)
                     homerPosition.y += Math.round(Math.random() * (topBound));
-
+                
                 // now the kamikaze must be destroyed
                 var classChildren = document.querySelectorAll('.donut-children');
                 

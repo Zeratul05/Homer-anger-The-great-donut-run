@@ -47,8 +47,8 @@ function updateHomer(){
 }
 
 function homerMoves(){
-    var homerObj = document.getElementById('homer').style;
-    var donutObj = document.getElementById('donut').style;
+    var homerObj = document.querySelector('#homer').style;
+    var donutObj = document.querySelector('#mama-donut').style;
     
     // the logic is the same as the donut following the cursor. But instead of the cursor, the donut
     if(homerPosition.x < mamaDonut.x)

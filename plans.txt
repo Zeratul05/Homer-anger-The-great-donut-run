@@ -16,4 +16,7 @@ create homer leveling system
 
 
 kamikaze logic:
-    when he collides with homer the donut explodes, explodes on command, when exploding move everything everywhere
+    when he collides with homer the donut explodes, can rocket jump, leaveing a blasted area round him, 
+        can set mines, with whom he can rocket jump, and he can detonate
+
+
